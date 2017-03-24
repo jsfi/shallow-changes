@@ -1,0 +1,32 @@
+{
+  "name": "shallow-changes",
+  "version": "1.0.0",
+  "description": "Compares objects or arrays and categorizes all keys as added, deleted, equal or updated",
+  "keywords": ["changes", "compare", "difference", "diff", "object", "array"],
+  "jsnext:main": "index.js",
+  "main": "dist/shallow-changes.js",
+  "umd:main": "dist/shallow-changes.umd.js",
+  "author": {
+    "name" : "Martin Sachse",
+    "email" : "martin.sachse+jsfi@gmail.com",
+    "url" : "https://jsfi.io"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jsfi/shallow-changes",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "eslint": "^3.18.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^3.2.2"
+  },
+  "scripts": {
+    "test": "ava",
+    "test:watch": "npm test -- --watch",
+    "rollup:watch": "rollup -w -c rollup.config.js",
+    "rollup:cjs": "rollup -c rollup.config.js",
+    "rollup:umd": "rollup -c rollup.umd.config.js",
+    "rollup": "npm run rollup:cjs && npm run rollup:umd"
+  }
+}
