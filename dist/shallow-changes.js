@@ -72,7 +72,7 @@ function shallowChanges(o1, o2, config) {
 
 				for (var idx$2 = o2Keys.length - 1; idx$2 >= 0; idx$2--) {
 					var key$1 = o2Keys[idx$2];
-					if (!key$1 in o1) {
+					if (!o1.hasOwnProperty(key$1)) {
 						added.push(key$1);
 					}
 				}

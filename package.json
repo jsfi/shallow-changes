@@ -1,6 +1,6 @@
 {
   "name": "shallow-changes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compares objects or arrays and categorizes all keys as added, deleted, equal or updated",
   "keywords": ["changes", "compare", "difference", "diff", "object", "array"],
   "jsnext:main": "index.js",

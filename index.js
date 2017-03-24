@@ -69,7 +69,7 @@ export default function shallowChanges(o1, o2, config = {}) {
 
 				for (let idx = o2Keys.length - 1; idx >= 0; idx--) {
 					const key = o2Keys[idx];
-					if (!key in o1) {
+					if (!o1.hasOwnProperty(key)) {
 						added.push(key);
 					}
 				}

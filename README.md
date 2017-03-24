@@ -21,7 +21,7 @@ var shallowChanges = require('shallow-changes');
 ```
 
 ```html
-<!-- use in HTML, available as shallowChanges, only 512b gzipped -->
+<!-- use in HTML, available as shallowChanges, only 501b gzipped -->
 <script src=".../shallow-changes/dist/shallow-changes.umd.js"></script>
 ```
 
