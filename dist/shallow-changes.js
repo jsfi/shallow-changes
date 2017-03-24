@@ -52,13 +52,8 @@ function shallowChanges(o1, o2, config) {
 
 		if (o1Keys.length) {
 			if (o2Keys.length) {
-				var o2Map = {};
-				for (var idx = o2Keys.length - 1; idx >= 0; idx--) {
-					o2Map[o2Keys[idx]] = idx;
-				}
-
-				for (var idx$1 = o1Keys.length - 1; idx$1 >= 0; idx$1--) {
-					var key = o1Keys[idx$1];
+				for (var idx = o1Keys.length - 1; idx >= 0; idx--) {
+					var key = o1Keys[idx];
 					if (isDefined(o2[key], key)) {
 						if (is(o1[key], o2[key])) {
 							equal.push(key);
@@ -70,8 +65,8 @@ function shallowChanges(o1, o2, config) {
 					}
 				}
 
-				for (var idx$2 = o2Keys.length - 1; idx$2 >= 0; idx$2--) {
-					var key$1 = o2Keys[idx$2];
+				for (var idx$1 = o2Keys.length - 1; idx$1 >= 0; idx$1--) {
+					var key$1 = o2Keys[idx$1];
 					if (!o1.hasOwnProperty(key$1)) {
 						added.push(key$1);
 					}

@@ -49,11 +49,6 @@ export default function shallowChanges(o1, o2, config = {}) {
 
 		if (o1Keys.length) {
 			if (o2Keys.length) {
-				const o2Map = {};
-				for (let idx = o2Keys.length - 1; idx >= 0; idx--) {
-					o2Map[o2Keys[idx]] = idx;
-				}
-
 				for (let idx = o1Keys.length - 1; idx >= 0; idx--) {
 					const key = o1Keys[idx];
 					if (isDefined(o2[key], key)) {
